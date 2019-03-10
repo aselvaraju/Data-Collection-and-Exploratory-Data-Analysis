@@ -1,0 +1,21 @@
+look up screen name
+udata<-lokupusers(df$screenName)
+convert to df 
+loc<-udata$location
+
+clean loc where loc!=''
+save as a df
+write top csv
+library("ggmap")
+maptools library
+geocode(loc_clean) geoloc1
+
+geolocna<-na.omit(geoloc1)
+write to csv
+
+coordinates from csv
+convert latr n lon to numeric
+
+grupuby()coordinates,lat,lon count 
+
+plot using geom_point
